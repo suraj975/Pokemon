@@ -14,6 +14,11 @@ g.	Delete existing files and copy all the files sent on mail and paste in “src
 h.	Then run it by this command: npm start
 i.	Then on your browser enter this url (http://localhost:3000/)
 3.	Other method is to directly clone the project from the my Github profile  https://github.com/Suraj975
+a.	Step1, 2  from ‘a’ to ‘e’ needs to be done initially, then these next steps need to be followed
+b.	Open this https://github.com/Suraj975
+c.	On top right side you will see clone or download. Download the zip file that will contain the files
+d.	You can also run this command on command prompt “git https://github.com/Suraj975/Pokemon.git”
+
 ## `Project`
 Initially only two links will be seen on the page home and Find Pokemon.
 ## `Home` 
