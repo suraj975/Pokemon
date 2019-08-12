@@ -1,33 +1,280 @@
+body{
+  background-color: rgba(139, 180, 106, 0.281);
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  border: 2px solid black;
+  background-color: red;
+  padding: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navigation{
+  /* border: 2px solid black; */
+  padding: 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #000080;
+  
+}
+
+.inputbar{
+  /* border: 2px solid red;  */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-content: center;
+  padding: 10px;
+  
+}
+
+
+input[type=text]{
+  width:90%;
+  border:2px solid #aaa;
+  border-radius:4px;
+  margin:8px 0;
+  outline:none;
+  padding:8px;
+  box-sizing:border-box;
+  transition:.3s;
+}
+
+input[type=text]:focus{
+  border-color:dodgerBlue;
+  box-shadow:0 0 8px 0 dodgerBlue;
+}
+.myForm{
+  /* border: 2px solid black;  */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width:50%;
+}
+.inputForm{
+  /* border: 2px solid blue; */
+  flex:1;
+}
+.buttonForm{
+  flex:1;
+  /* border: 2px solid red;  */
+}
+
+.Pokemons{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 20px;
+  width: 90%;
+  height: auto;
+  justify-content: center;
+  align-content: center;
+}
+
+.PokemonElement{
+  border: 2px solid black;
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  background-color: rgba(12, 152, 190, 0.884);
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.PokemonElement::after {
+  content: "";
+  position: absolute;
+  border-radius: 5px;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.PokemonElement:hover {
+  -webkit-transform: scale(1.25, 1.25);
+  transform: scale(1.25, 1.25);
+}
+
+.PokemonElement:hover::after {
+    opacity: 1;
+}
+
+.PokemonElement img{
+  width: 150px;
+  height: auto;
+  box-shadow: 0px 10px 9px -11px rgba(0, 0, 0, 1);
+
+}
+
+
+.pokemonDetailedInfo{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.MainElement{
+  border: 2px solid black;
+  width: 300px;
+  height: 370px;
+  margin: 10px;
+  list-style-type: none;
+  background-color:rgba(12, 152, 190, 0.884);
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.MainElement img{
+  width: 150px;
+  height: 170px;
+  box-shadow: 0px 10px 9px -11px rgba(0, 0, 0, 1);
+}
+
+.MainElement::after {
+  content: "";
+  position: absolute;
+  border-radius: 5px;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.MainElement:hover {
+  -webkit-transform: scale(1.15, 1.15);
+  transform: scale(1.15, 1.15);
+}
+
+.MainElement:hover::after {
+    opacity: 1;
+}
+
+.InitialPicBox {
+  width: 100%;
+  display: flex;
+  height: 400px;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+}
+
+.hidden { display:hide; }
+
+a,a:visited,a:hover,a:active{
+  -webkit-backface-visibility:hidden;
+          backface-visibility:hidden;
+	position:relative;
+  transition:0.5s color ease;
+	text-decoration:none;
+	color:white;
+	font-size:1em;
+}
+a:hover{
+	color:#d73444;
+}
+a.before:before,a.after:after{
+  content: "";
+  transition:0.5s all ease;
+  -webkit-backface-visibility:hidden;
+          backface-visibility:hidden;
+  position:absolute;
+}
+a.before:before{
+  top:-0.15em;
+}
+a.after:after{
+  bottom:-0.15em;
+}
+a.before:before,a.after:after{
+  height:3px;
+  height:0.15rem;
+  width:0;
+  background:#d73444;
+}
+a.fifth:before,a.fifth:after{
+  right:0;
+}
+a.before:hover:before,a.after:hover:after{
+  width:100%;
+}
+
+.nav3{
+  margin: 20px;
+  width:20%;
+  box-align: center;
+  padding: 5px;
+  background-color: #000080;
+}
+
+Button {
+  background-color: rgb(194, 15, 15); /* Green */
+  border: none;
   color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+Button:hover {
+	background-color:#476e9e;
+}
+Button:active {
+	position:relative;
+	top:1px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 600px) {
+
+  Button {
+    background-color: rgb(253, 14, 14); /* Green */
+    border: none;
+    color: white;
+    padding: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 3px 2px;
+    cursor: pointer;
   }
-  to {
-    transform: rotate(360deg);
+  
+  Button:hover {
+    background-color:#476e9e;
   }
+  Button:active {
+    position:relative;
+    top:1px;
+  }
+
+
 }
