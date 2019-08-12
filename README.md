@@ -1,6 +1,4 @@
-                                   # `Pokemon Search Application`
-
-
+# `Pokemon Search Application`
 ## `Web Framework`: React.JS, JavaScript, HTML, CSS
 ## `API`: PokeApi 
 ## `Installation Procedure`
