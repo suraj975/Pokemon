@@ -1,7 +1,7 @@
-                                   ### `Pokémon Search Application`
+                                   ## `Pokémon Search Application`
 
 
-## `Web Framework`: React.JS, JavaScript, HTML, CSS
+# `Web Framework`: React.JS, JavaScript, HTML, CSS
 ## `API`: PokeApi 
 ## `Installation Procedure`
 1.	Install node.js and npm (Download based on your system configuration https://nodejs.org/en/download/\
