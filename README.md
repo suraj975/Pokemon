@@ -18,15 +18,18 @@ i.	Then on your browser enter this url (http://localhost:3000/)
 3.	Other method is to directly clone the project from the my Github profile  https://github.com/Suraj975
 ## `Project`
 Initially only two links will be seen on the page home and Find Pokemon.
-## `Home`: This is the current page that we see on Url: http://localhost:3000/
+## `Home` 
+This is the current page that we see on Url: http://localhost:3000/
 1.	In the above search bar you can search any pokemon by writing its name in small letters and correct names
 2.	It will shows the details of the pokemon selected
 3.	Just to start with some examples try: raichu, mewtwo, blastoise etc
-## `Find Pokemon`: This is the other page that allows you to select the pokemon by its types
+## `Find Pokemon`
+This is the other page that allows you to select the pokemon by its types
 4.	In this search you can enter multiple types separating it by commas
 5.	Types entered in the search bar should be of small character
 6.	Just to start with some examples try: fire, rock, water
-## `Details`: This is the third page will pop up that will show all the details of the Pokémon’s that you have selected
+## `Details`
+This is the third page will pop up that will show all the details of the Pokémon’s that you have selected
 1.	This will include its abilities and the performance stats 
 ## `Testing Tools`:
 1.	React has its own developer tools to find debugs and to check the performances.
