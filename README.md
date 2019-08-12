@@ -1,3 +1,44 @@
+                                   ### `Pokémon Search Application`
+
+
+## `Web Framework`: React.JS, JavaScript, HTML, CSS
+## `API`: PokeApi 
+## `Installation Procedure`
+1.	Install node.js and npm (Download based on your system configuration https://nodejs.org/en/download/\
+2.	Install react to run this project: Run the below commands on command prompt
+a.	Open command prompt
+b.	Move to location where you want to save the project
+c.	Run this command npx create-react-app pokemon
+d.	Then it will show you to move to the file pokemon (In windows run command cd pokemon)
+e.	We also need React-Router methods, so run this command npm install react-router-dom 
+f.	Installation Done
+g.	Delete existing files and copy all the files sent on mail and paste in “src” folder present in Pokémon folder
+h.	Then run it by this command: npm start
+i.	Then on your browser enter this url (http://localhost:3000/)
+3.	Other method is to directly clone the project from the my Github profile  https://github.com/Suraj975
+## `Project`
+Initially only two links will be seen on the page home and Find Pokemon.
+## `Home`: This is the current page that we see on Url: http://localhost:3000/
+1.	In the above search bar you can search any pokemon by writing its name in small letters and correct names
+2.	It will shows the details of the pokemon selected
+3.	Just to start with some examples try: raichu, mewtwo, blastoise etc
+## `Find Pokemon`: This is the other page that allows you to select the pokemon by its types
+4.	In this search you can enter multiple types separating it by commas
+5.	Types entered in the search bar should be of small character
+6.	Just to start with some examples try: fire, rock, water
+## `Details`: This is the third page will pop up that will show all the details of the Pokémon’s that you have selected
+1.	This will include its abilities and the performance stats 
+## `Testing Tools`:
+1.	React has its own developer tools to find debugs and to check the performances.
+2.	Install React performance tool from chrome store
+3.	Enter into developer tools and click on performance tool
+4.	Start recording and play with the pages as it all gets captured on the tool
+5.	After stopping the recording the time taken scripting, rendering, system, idle and many other tests
+6.	Jest is also very know method of testing react application. Facebook uses as their primary means of testing react apps.
+7.	Just need to run npm test using command prompt. 	
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
